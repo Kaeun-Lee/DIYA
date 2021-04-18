@@ -1,0 +1,39 @@
+※ Vector
+- Array of numbers
+ 
+※ Scalar operations
+- Involve a vector and a number
+- Addition/subtraction/multiplication/division
+
+※ Vector addition/subtraction
+- Two vectors must have same dimension
+- Element-wise operation
+- vector dimension : the number of items in a vector
+ 
+※ ★ Dot product (벡터 내적 연산)
+- Two vectors involved
+- Result is a scalar
+
+※ Matrices
+- Rectangular grid of numbers (like a spreadsheet)
+
+※ Matrix diemsions
+- Dimension indicated by # rows and columns
+
+※ Row and column vectors (벡터로 표현될 수 있는 matrix) 
+- Row vector = (1, n) matrix
+- Column vector = (n, 1) matrix
+
+※ Matrix transposition
+- Switch rows and columns
+
+※ Scalar operations
+- Addition/subtraction/multiplication/division of vector with a number
+
+※ Matrix addition/subtraction
+- Matrices must have same dimension
+- Element-wise operation
+
+※ ★ Matrix multiplication
+- # of columns of the 1st matrix must be equal # of rows of the 2nd
+- Product of an (m,n) matrix and an (n,k) matrix is an (m,k) matrix  

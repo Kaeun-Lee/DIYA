@@ -1,0 +1,87 @@
+▼ What you'll learn
+- Defining AI
+- What's machine learning?
+- Supervised, and reinforcement learning
+- Defining deep learning
+- Traditional machine learning vs deep learning
+- Deep learning applications in audio
+
+※ Artificial intelligence > Machine learning > Deep learning
+
+※ Intelligent agent = Rational agent 
+- Rationality = Acting to achieve one's goals, given one's beliefs
+
+※ Artificial intelligence
+- Many AI techniques/algorithms
+- Evolutionary algorithms
+- Expert systems
+- Search(e.g.,A*)
+- Machine learning
+
+※ Machine learning (ML)
+- Computer performs a task without using explicit instructions
+- Computer learns from data
+
+※ Expert system: Onset detection / RULES -> 기계 -> 특징(패턴) 추출
+※ ML onset detection: Training / 데이터 -> 기계 -> RULES
+
+※ ML paradigms
+- Supervised learning
+- Unsupervised learning
+- Reinforcement learning
+- ...
+
+※ Supervised learning
+- Model trained with 'labelled' data
+
+※ Unsupervised learning
+- Model draws inferences from unstructured data
+
+※ Reinforcement learning
+- Agent takes actions in virtual environment and learns through rewards
+
+※ ML algorithms
+- Logistic regression
+- Linear regression
+- Random forest
+- KNN
+- Support vector machines
+- Neural network(NN)
+- ...
+
+※ Neural network(NN) - 머신러닝에 속하고, 딥러닝을 사용
+- Input layer -> Hidden layers -> Output layer
+
+※ Deep learning
+- ML subset
+- (Deep) neural networks
+- >1 hidden layer(more than 1)
+
+※ Tranditional ML vs DL
+- Feature engineering vs end-to-end
+  - Feature engineering : labled된 데이터에서 featrues를 추출하고 이 features를 기계에 넣음(트레이닝)-> RULES
+                                 특정 문제를 묘사하기위해 어떤 features가 가장 중요한지 이해하는 것이 가장 중요
+  - End-to-end : row date를 어떠한 특징 추출도 없이 바로 머신러닝 알고리즘에 넘긴다. 
+- (Relatively) small dataset vs large dateset
+- Less computation intensive vs very resource intensive
+- Ideal for "simple" problems vs ideal for "complex" problems
+
+※ When should you use DL?
+- Very large dataset
+- Complex problem where traditional ML fails
+- Access to extensive computational resources 
+
+※ DL applications in audio
+- Speech recognition
+- Voice-based emotion classification
+- Noise recognition
+- Musical genre, instrument, mood classification
+- Music tagging
+- Music generation
+
+ ※ Takeaway points
+- AI = Building rational agents that act to achieve their goals given their beliefs
+- ML is a subset of AI
+- There are different flavours of ML and many ML algorithms
+- DL is a subset of ML using DNNs
+- DL isn't always the way to go!

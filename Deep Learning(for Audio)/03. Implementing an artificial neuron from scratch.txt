@@ -1,0 +1,19 @@
+▼ What you'll learn
+- Biological neurons
+- Math behind the artificial neuron
+- Implementing an artificial neuron with Python
+
+
+※ Biological neurons
+- Dendrite(수상돌기) : They get signals from other neurons & input it to the cell body
+- 아주아주 많은 뉴런들의 연결과 작용으로 걷고, 연주하는 등의 행위를 할 수 있음
+
+※ The artificial neuron
+input xi * wi-> sum -> activation -> y
+
+※ The activation function: Sigmoid
+
+※ Takeaway points
+- Artificial neurons are loosely inspired to biological neurons
+- Artificial neurons are computational units
+- They transform inputs into outputs using an activation function
