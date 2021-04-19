@@ -1,0 +1,26 @@
+▼ Why is a neural network needed?
+- A single neuron works for linear problems
+- Real-world problems are complex
+- ANNs can reproduce highly non-linear functions
+
+
+※ The components of an artificial nueral network (ANN)
+- Neurons
+- Input, hidden, output layers
+- Weighted connections
+- Activation function
+
+※ The multilayer perceptron (MLP)
+- Feed Forward Neural Network(FFNN)
+
+※ Computaion in MLP
+- Weights
+- Net inputs (sum of weighted inputs)
+- Activations (output of neurons to next layer)
+
+※ Takeaway points
+- ANNs work for complex problems 
+  or problems that have nonlinear solutions
+- Computation is distributed
+- Signal moves from left to right
+- Weights, net inputs and activations
