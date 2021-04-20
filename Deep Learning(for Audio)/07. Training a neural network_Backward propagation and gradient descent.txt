@@ -1,0 +1,26 @@
+※ Training a neural network
+- Tweak weights of the connections
+- Feed training data (input + target) to the network
+- Iterative adjustments
+
+※ Training a neural network
+- Input signals →
+1. Get prediction
+2. Calculate error
+
+- Error signals ← (back to the initial layers)
+3. Calculate gradient of error function over the weights
+4. Update parameters
+
+※ Calculate error
+E = E(p, y) = 1/2(p - y)^2
+
+※ Calculate gradient of error function
+F = F(x, W)
+E = E(p, y) = E(F(x, W), y)
+ 
+※ Back propagation
+
+※ Gradient descent
+- Take a step in opposite direction to gradient
+- Step = Learning rate
