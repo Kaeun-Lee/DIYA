@@ -20,7 +20,7 @@ F = F(x, W)
 E = E(p, y) = E(F(x, W), y)
  
 ※ Back propagation
-
+ 
 ※ Gradient descent
 - Take a step in opposite direction to gradient
-- Step = Learning rate
+- Step(or the size of the step) = Learning rate(←a parameter)
