@@ -6,3 +6,52 @@
 ※ Waveform
 - period
  - period is strictly correlated with frequency
+ - frequency is the inverse of period
+  - f =1 / T
+
+- amplitude
+ - the distance of a point from zero
+
+※ Frequency/pitch and amplitude/loudness
+
+※ Analog digital conversion (ADC)
+- Sample rate = 44,100 Hz
+- Bit depth = 16bits/channel
+
+Step 1. Sampling
+- Signal sampled at uniform time intervals
+
+Step 2. Qauntization
+- Amplitude quantised with limited number of bits
+
+※ Fourier tansform
+- Decompose complex periodic sound into sum of sine waves oscillating at different frequencies
+- From time domain to frequency domain
+- No time imformation 
+ 
+※ Short Time Fourier Transform (STFT)
+- Computes several FFT at different intervals
+- Preserves time imformation
+- Fixed frame size (e.g., 2048 samples)
+ - frame : a bunch of samples
+- Gives a spectrogram (time + frequency + magnitude)
+
+※ DL pre-processing pipeline for audio data
+
+※ Tranditional ML pre-processing pipeline for audio data
+a waveform -> Amplitude envelope, Spectral centroid, 0-crssing rate, Spectral flux, ... -> ML algorithm
+- Feature engineering
+- Perform STFT
+- Extract time + frequency domain features
+
+※ Mel Frequency Cepstral Coefficients (MFCCs)
+- Capture timbral/textural aspects of sound
+- Frequency domain feature
+- Approximate human auditory system
+- 13 to 40 coefficients
+- Calculated at each frame
+
+※ MFCCs applications
+- Speech recognition
+- Music genre classification
+- Music instrument classification
