@@ -1,0 +1,20 @@
+※ Rectified Linear Unit (ReLU)
+- ReLU(h) = 0, if h < 0
+                h, if h >= 0
+- Better convergence
+ - sigmoid 함수보다 더 빠르다
+- Reduced likelihood of vanishing gradient
+
+※ Types of batching
+- Stochastic
+  - Calculate gradient on 1 sample
+  - Quick, but inaccurate
+    - because there's a lot of noise
+
+- Full batch
+  - Compute gradient on the whole training set
+  - Slow, memory intensive, accurate
+
+- Mini-batch
+ - Compute gradient on a subset of data set(16 - 128 samples)
+ - Best of the 2 worlds
