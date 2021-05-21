@@ -1,0 +1,50 @@
+▼ Solving overfitting
+- Simpler architecture
+- Data augmentation
+- Early stopping
+- Dropout
+- Regularization
+
+
+※ Simpler architecture
+- Remove layers
+- Decrease # of neurons
+- No universal rule 
+
+※ Audio data augmentation
+- Artificially increase # of training samples
+- Apply transformations to audio files
+ - Pitch shifting    (목소리 변조 및 강조)
+ - Time stretching (음원 속도 조절)
+ - Adding background noise
+ - ...
+- 변형된 데이터는 train에서만 사용
+ - 변형해서 만든 데이터는 아무래도 원래 데이터처럼 정확하지 않음
+ - 모델을 훈련시킬 때 정 데이터가 부족하면 변형된 데이터라도 넣어서 훈련해보라는 뜻
+ - 모델의 정확도를 측정할 때는 실제 데이터를 사용해서 확인하는 게 좋음
+
+※ Early stopping
+- Choose rules to stop training
+- overfitting이 되기 전에 train을 멈춘다 (error 그래프를 참고하여 epoch 수 결정)
+
+※ Dropout - 분산을 낮춰줌
+- Randomly drop neurons while training (test 할 때는 사용X)
+- Increased network robustness
+ - the network can't rely on specific neurons too much
+- Dropout probability : 0.1 - 0.5
+ - 삭제된 뉴런의 값은 순전파/역전파하지 않음
+
+※ Regularization
+- Add penalty to error function
+- Punish large weights
+- L1 and L2
+
+※ L1 regularization
+- Minimises absolute value of weights
+- Robust to outliers
+- Generates simple model
+
+※ L2 regularization
+- Minimises squared value of weights
+- Not robust to outliers
+- Learns complex patterns
