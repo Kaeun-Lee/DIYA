@@ -14,7 +14,7 @@
 ※ Audio data augmentation
 - Artificially increase # of training samples
 - Apply transformations to audio files
- - Pitch shifting    (목소리 변조 및 강조)
+ - Pitch shifting  (목소리 변조 및 강조)
  - Time stretching (음원 속도 조절)
  - Adding background noise
  - ...
