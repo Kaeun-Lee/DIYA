@@ -2,5 +2,6 @@
 - Mainly used for processing images
 - Perform better than multilayer perceptron
 - Less parameters than dense layers
-
+   
   
+ 
