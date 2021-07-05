@@ -1,8 +1,83 @@
 ※ CNNs
 - Mainly used for processing images
-- Perform better than multilayer perceptron
-- Less parameters than dense layers
-   
-  
- 
- 
+- 'Perform better' than multilayer perceptron
+- 'Less parameters' than dense layers
+
+※ Intuition
+- Image data is structured
+ - Edges, shapes
+ - Translation invariance
+ - Scale invariance
+- CNN emulates human vision system
+- Components of a CNN learn to extract different features
+
+※ CNN components
+- Convolution
+- Pooling
+
+※ Convolution
+- Kernel = grid of weights
+- Kernel is "applied" to the image
+- Traditionally used in image processing
+
+※ Convolution : Zero padding
+- We come up with an artificial edge that has all zeros
+  for the purpose of calculation
+
+※ Kernels
+- Feature detectors
+- Kernels are learned
+
+※ Architectural decisions for convolution
+- Grid size
+- Stride
+- Depth
+- Number of kernels
+
+※ Grid size
+- # of pixels for height/wieth
+- Odd numbers
+
+※ Stride
+- Step size used for sliding kernel on image
+- Indicated in pixels
+- 가로 방향과 세로 방향의 stride를 다르게 설정할 수 있음
+
+※ Depth (=Channel)
+- Color image일 경우 kernel의 depth는 3이 된다. (R,G,B)
+
+※ # of kernels
+- A conv layer has multiple kernels
+- Each kernel outputs a single 2D array
+- Output from a layer has as many 2d arrays as # kernels
+
+※ Pooling
+- Downsample the image
+- Overlaying grid on image
+- Max/average pooling
+- No parameters
+
+※ Pooling settings
+- Grid size
+- Stride
+- Type (e.g., max, average)
+
+※ CNN architecture
+
+           ┌━━━━━━━━━━ Feature Learning ━━━━━━━━━━┐    ┌━━━━━ Classification ━━━━━┐
+Input -> Convolution + Relu -> Pooling -> Convolution + Relu -> Pooling -> Flatten -> Fully Connected -> Softmax
+
+- 앞단의 Conv layer에서는 low-level features를 추출 (ex. edges)
+- layer가 깊어질수록 higher-level features를 추출 (ex. shapes -> objects (like a car))
+
+※ How does convolution/pooling apply to audio?
+- Spectrogram/MFCC = image
+- Time, frequency      = x, y
+- Amplitude 	    = pixel value
+
+※ Preparing MFCCs for a CNN
+- 13 MFCCs
+- Hop length                = 512 samples
+- # samples in audio file = 51,200
+-> Data shape = 100 x 13 x 1 (1 = Depth)
+ - audio data는 grayscale image와 비교되기 때문에 RGB는 필요없음
